@@ -6,9 +6,84 @@
 //
 
 #include <iostream>
+#include "figure.hpp"
+#include "triangle.hpp"
+#include "right_triangle.hpp"
+#include "isosceles_triangle.hpp"
+#include "equilateral_triangle.hpp"
+#include "quadrilateral.hpp"
+#include "rectangle.hpp"
+#include "square.hpp"
+#include "parallelogram.hpp"
+#include "rhomb.hpp"
+#include "check_errors.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+   
+   
+        
+    try
+    {
+        Triangle triangle (25,27,38,60,60,60);
+        triangle.check();
+        std::cout << "Triangle:" << std::endl;
+        triangle.print_info();
+        std::cout << std::endl;
+    }
+    catch (CheckError &ex)
+    {
+        std::cout << ex.what() << std::endl;
+    }
+       
+    try
+    {
+        Right_triangle right_Triangle (40,35,10,78,34);
+        right_Triangle.check();
+        std::cout << "Right triangle:" << std::endl;
+        right_Triangle.print_info();
+        std::cout << std::endl;
+    }
+    catch (CheckError &ex)
+    {
+        std::cout << ex.what() << std::endl;
+    }
+
+
+    Isosceles_triangle isosceles_Triangle (45,70,50,80);
+    std::cout << "Isosceles triangle:" << std::endl;
+    isosceles_Triangle.print_info();
+    std::cout << std::endl;
+
+    Equilateral_triangle equilateral_Triangle (45);
+    std::cout << "Equilateral triangle:" << std::endl;
+    equilateral_Triangle.print_info();
+    std::cout << std::endl;
+    
+    Quadrilateral quadrilateral (45,65,35,75,60,60,30,30);
+    std::cout << "Quadrilateral:" << std::endl;
+    quadrilateral.print_info();
+    std::cout << std::endl;
+    
+    Rectangle rectangle (45, 65);
+    std::cout << "Rectangle:" << std::endl;
+    rectangle.print_info();
+    std::cout << std::endl;
+    
+    Square square (45);
+    std::cout << "Square:" << std::endl;
+    square.print_info();
+    std::cout << std::endl;
+    
+    Parallelogram parallelogram (45,75,35,55);
+    std::cout << "Parallelogram:" << std::endl;
+    parallelogram.print_info();
+    std::cout << std::endl;
+    
+    Rhomb rhomb (45,35,55);
+    std::cout << "Rhomb:" << std::endl;
+    rhomb.print_info();
+    std::cout << std::endl;
+    
     return 0;
 }
+

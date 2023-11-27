@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003D55332B14794000A7EE07 /* check_errors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 003D55312B14794000A7EE07 /* check_errors.cpp */; };
 		00B18A372B1263E70014B531 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A362B1263E70014B531 /* main.cpp */; };
+		00B18A3F2B12641C0014B531 /* figure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A3D2B12641C0014B531 /* figure.cpp */; };
+		00B18A422B12645A0014B531 /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A402B12645A0014B531 /* triangle.cpp */; };
+		00B18A452B1264980014B531 /* right_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A432B1264980014B531 /* right_triangle.cpp */; };
+		00B18A482B1264C50014B531 /* isosceles_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A462B1264C40014B531 /* isosceles_triangle.cpp */; };
+		00B18A4B2B1264F10014B531 /* equilateral_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A492B1264F10014B531 /* equilateral_triangle.cpp */; };
+		00B18A4E2B1265210014B531 /* quadrilateral.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A4C2B1265210014B531 /* quadrilateral.cpp */; };
+		00B18A512B12654D0014B531 /* rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A4F2B12654D0014B531 /* rectangle.cpp */; };
+		00B18A542B1265760014B531 /* square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A522B1265760014B531 /* square.cpp */; };
+		00B18A572B12659F0014B531 /* parallelogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A552B12659F0014B531 /* parallelogram.cpp */; };
+		00B18A5A2B12660B0014B531 /* rhomb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B18A582B12660B0014B531 /* rhomb.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +34,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		003D55312B14794000A7EE07 /* check_errors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = check_errors.cpp; sourceTree = "<group>"; };
+		003D55322B14794000A7EE07 /* check_errors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = check_errors.hpp; sourceTree = "<group>"; };
 		00B18A332B1263E70014B531 /* cppm-homework-08.02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cppm-homework-08.02"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B18A362B1263E70014B531 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		00B18A3D2B12641C0014B531 /* figure.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = figure.cpp; sourceTree = "<group>"; };
+		00B18A3E2B12641C0014B531 /* figure.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = figure.hpp; sourceTree = "<group>"; };
+		00B18A402B12645A0014B531 /* triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = triangle.cpp; sourceTree = "<group>"; };
+		00B18A412B12645A0014B531 /* triangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = triangle.hpp; sourceTree = "<group>"; };
+		00B18A432B1264980014B531 /* right_triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = right_triangle.cpp; sourceTree = "<group>"; };
+		00B18A442B1264980014B531 /* right_triangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = right_triangle.hpp; sourceTree = "<group>"; };
+		00B18A462B1264C40014B531 /* isosceles_triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isosceles_triangle.cpp; sourceTree = "<group>"; };
+		00B18A472B1264C40014B531 /* isosceles_triangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = isosceles_triangle.hpp; sourceTree = "<group>"; };
+		00B18A492B1264F10014B531 /* equilateral_triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = equilateral_triangle.cpp; sourceTree = "<group>"; };
+		00B18A4A2B1264F10014B531 /* equilateral_triangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = equilateral_triangle.hpp; sourceTree = "<group>"; };
+		00B18A4C2B1265210014B531 /* quadrilateral.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = quadrilateral.cpp; sourceTree = "<group>"; };
+		00B18A4D2B1265210014B531 /* quadrilateral.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = quadrilateral.hpp; sourceTree = "<group>"; };
+		00B18A4F2B12654D0014B531 /* rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rectangle.cpp; sourceTree = "<group>"; };
+		00B18A502B12654D0014B531 /* rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rectangle.hpp; sourceTree = "<group>"; };
+		00B18A522B1265760014B531 /* square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = square.cpp; sourceTree = "<group>"; };
+		00B18A532B1265760014B531 /* square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = square.hpp; sourceTree = "<group>"; };
+		00B18A552B12659F0014B531 /* parallelogram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = parallelogram.cpp; sourceTree = "<group>"; };
+		00B18A562B12659F0014B531 /* parallelogram.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = parallelogram.hpp; sourceTree = "<group>"; };
+		00B18A582B12660B0014B531 /* rhomb.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rhomb.cpp; sourceTree = "<group>"; };
+		00B18A592B12660B0014B531 /* rhomb.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rhomb.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +74,28 @@
 		00B18A2A2B1263E70014B531 = {
 			isa = PBXGroup;
 			children = (
+				003D55312B14794000A7EE07 /* check_errors.cpp */,
+				003D55322B14794000A7EE07 /* check_errors.hpp */,
+				00B18A582B12660B0014B531 /* rhomb.cpp */,
+				00B18A592B12660B0014B531 /* rhomb.hpp */,
+				00B18A552B12659F0014B531 /* parallelogram.cpp */,
+				00B18A562B12659F0014B531 /* parallelogram.hpp */,
+				00B18A522B1265760014B531 /* square.cpp */,
+				00B18A532B1265760014B531 /* square.hpp */,
+				00B18A4F2B12654D0014B531 /* rectangle.cpp */,
+				00B18A502B12654D0014B531 /* rectangle.hpp */,
+				00B18A4C2B1265210014B531 /* quadrilateral.cpp */,
+				00B18A4D2B1265210014B531 /* quadrilateral.hpp */,
+				00B18A492B1264F10014B531 /* equilateral_triangle.cpp */,
+				00B18A4A2B1264F10014B531 /* equilateral_triangle.hpp */,
+				00B18A462B1264C40014B531 /* isosceles_triangle.cpp */,
+				00B18A472B1264C40014B531 /* isosceles_triangle.hpp */,
+				00B18A432B1264980014B531 /* right_triangle.cpp */,
+				00B18A442B1264980014B531 /* right_triangle.hpp */,
+				00B18A402B12645A0014B531 /* triangle.cpp */,
+				00B18A412B12645A0014B531 /* triangle.hpp */,
+				00B18A3D2B12641C0014B531 /* figure.cpp */,
+				00B18A3E2B12641C0014B531 /* figure.hpp */,
 				00B18A352B1263E70014B531 /* cppm-homework-08.02 */,
 				00B18A342B1263E70014B531 /* Products */,
 			);
@@ -120,6 +175,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B18A372B1263E70014B531 /* main.cpp in Sources */,
+				00B18A542B1265760014B531 /* square.cpp in Sources */,
+				00B18A422B12645A0014B531 /* triangle.cpp in Sources */,
+				00B18A482B1264C50014B531 /* isosceles_triangle.cpp in Sources */,
+				00B18A512B12654D0014B531 /* rectangle.cpp in Sources */,
+				00B18A452B1264980014B531 /* right_triangle.cpp in Sources */,
+				00B18A3F2B12641C0014B531 /* figure.cpp in Sources */,
+				00B18A4B2B1264F10014B531 /* equilateral_triangle.cpp in Sources */,
+				00B18A4E2B1265210014B531 /* quadrilateral.cpp in Sources */,
+				00B18A5A2B12660B0014B531 /* rhomb.cpp in Sources */,
+				00B18A572B12659F0014B531 /* parallelogram.cpp in Sources */,
+				003D55332B14794000A7EE07 /* check_errors.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
