@@ -8,9 +8,21 @@
 #pragma once
 #include <iostream>
 #include "triangle.hpp"
+#include "check_errors.hpp"
+
 
 class Isosceles_triangle : public Triangle
 {
 public:
-    Isosceles_triangle (int a, int b, int A, int B) : Triangle (a, b, a, A, B, A ){};
+    Isosceles_triangle (int a, int b, int A, int B) : Triangle (3, a, b, a, A, B, A )
+    {
+        if (a != c)
+        {
+            throw CheckError("Figure creation error. Sides a and c are not equal.");
+        }
+        if (A != C)
+        {
+            throw CheckError("Figure creation error. Angles A and C are not equal.");
+        }
+    };
 };

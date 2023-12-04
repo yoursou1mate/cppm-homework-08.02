@@ -8,16 +8,7 @@
 #pragma once
 #include <exception>
 #include <stdexcept>
-#include "figure.hpp"
-#include "triangle.hpp"
-#include "right_triangle.hpp"
-#include "isosceles_triangle.hpp"
-#include "equilateral_triangle.hpp"
-#include "quadrilateral.hpp"
-#include "rectangle.hpp"
-#include "square.hpp"
-#include "parallelogram.hpp"
-#include "rhomb.hpp"
+#include <iostream>
 
 
 class CheckError : public std::domain_error

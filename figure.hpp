@@ -14,8 +14,9 @@ protected:
     int sides_count = 0;
     std::string name = "Figure :";
 public:
+    
     virtual void print_info ();
-    virtual void check ();
+ 
     
 };
 

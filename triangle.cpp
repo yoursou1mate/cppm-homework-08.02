@@ -6,6 +6,7 @@
 //
 
 #include "triangle.hpp"
+#include "check_errors.hpp"
 
 
 std::string Triangle::get_sides ()
@@ -28,14 +29,4 @@ void Triangle::print_info()
      std::cout << get_angles() << std::endl;
 };
 
-    void Triangle::check ()
-{
-        if (sides_count != 3)
-        {
-            throw CheckError("Figure creation error. Wrong  number of sides.");
-        }
-        if (A + B + C != 180)
-        {
-            throw CheckError("Figure creation error. Angles are not equal to 180.");
-        }
-}
+

@@ -7,11 +7,7 @@
 
 #include "right_triangle.hpp"
 
-void Right_triangle::check()
-{
-    if (C != 90)
-    {
-        throw CheckError("Figure creation error. Wrong angle C.");
-    }
     
-}
+
+    
+

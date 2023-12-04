@@ -10,15 +10,21 @@
 #include "triangle.hpp"
 #include "check_errors.hpp"
 
-
 class Right_triangle : public Triangle
 {
 public:
-    Right_triangle (int a, int b, int c, int A, int B) : Triangle (a, b, c, A, B, 90){};
-    
-//    void print_info() override;
-    void check () override;
+    Right_triangle (int a, int b, int c, int A, int B) : Triangle (3, a, b, c, A, B, 90)
+    {
+        if (C != 90)
+        {
+            throw CheckError("Figure creation error. Wrong angle C.");
+        }
+    };
+
 };
+
+
+
 
 
 

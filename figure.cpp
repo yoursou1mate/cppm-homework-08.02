@@ -15,10 +15,4 @@
         std::cout << sides_count << std::endl;
     }
     
-    void Figure::check ()
-   {
-      if (sides_count != 0)
-   {
-       throw CheckError("Figure creation error. Wrong  number of sides.");
-   }
-   }
+   

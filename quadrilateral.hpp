@@ -9,10 +9,12 @@
 
 #include <iostream>
 #include "figure.hpp"
+#include "check_errors.hpp"
 
 class Quadrilateral : public Figure
 {
 protected:
+    int sides_count = 4;
     int a = 0;
     int b  = 0;
     int c = 0;
@@ -23,8 +25,9 @@ protected:
     int D = 0;
     
 public:
-    Quadrilateral (int a, int b, int c, int d, int A, int B, int C, int D)
+    Quadrilateral (int sides_count, int a, int b, int c, int d, int A, int B, int C, int D)
     {
+        this->sides_count = sides_count;
         this->a = a;
         this->b = b;
         this->c = c;
@@ -33,6 +36,14 @@ public:
         this->B = B;
         this->C = C;
         this->D = D;
+        if(sides_count != 4)
+        {
+            throw CheckError("Figure creation error. Wrong number of sides.");
+        }
+        if(A + B + C + D != 180)
+        {
+            throw CheckError("Figure creation error. Wrong number of sides.");
+        }
     }
     
     std::string get_sides ();

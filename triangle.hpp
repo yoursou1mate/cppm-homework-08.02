@@ -10,6 +10,7 @@
 #include "figure.hpp"
 #include "check_errors.hpp"
 
+
 class Triangle : public Figure
 {
 protected:
@@ -22,19 +23,27 @@ protected:
     int C = 0;
     
 public:
-    Triangle (int a,int b, int c, int A, int B, int C)
+    Triangle (int sides_count, int a,int b, int c, int A, int B, int C)
     {
+        this-> sides_count = sides_count;
         this->a = a;
         this->b = b;
         this->c = c;
         this->A = A;
         this->B = B;
         this->C = C;
+        if (sides_count != 3)
+        {
+            throw CheckError("Figure creation error. Wrong  number of sides.");
+        }
+        if (A + B + C != 180)
+        {
+            throw CheckError("Figure creation error. Angles are not equal to 180.");
+        }
     }
     
     std::string get_sides ();
     std::string get_angles ();
     void print_info() override;
-    void check () override;
     
 };
